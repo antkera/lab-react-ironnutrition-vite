@@ -1,13 +1,13 @@
 import { useState } from "react";
 
-import FoodBox from './FoodBox'
-import AddFoodForm from './AddFoodForm'
+import FoodBox from "./FoodBox";
+import AddFoodForm from "./AddFoodForm";
 import foodsJson from "../foods.json";
 export default function FoodList() {
-    const [foodsArr, setFoodsArr] = useState(foodsJson);
+  const [foodsArr, setFoodsArr] = useState(foodsJson);
   return (
     <div>
-      <AddFoodForm foodsArr= {foodsArr} setFoodsArr={setFoodsArr}/>
+      <AddFoodForm foodsArr={foodsArr} setFoodsArr={setFoodsArr} />
       <hr />
       {foodsArr.map((eachFood) => {
         return (
@@ -20,5 +20,5 @@ export default function FoodList() {
         );
       })}
     </div>
-  )
+  );
 }

@@ -1,5 +1,3 @@
-
-
 export default function FoodBox({
   food: { name, calories, image, servings, id },
   foodsArr,

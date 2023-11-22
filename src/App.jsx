@@ -6,11 +6,9 @@ import AddFoodForm from "./components/AddFoodForm";
 import FoodList from "./components/FoodList";
 
 function App() {
-  
-
   return (
     <div>
-      <FoodList/>
+      <FoodList />
     </div>
   );
 }
